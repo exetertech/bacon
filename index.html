@@ -56,14 +56,14 @@
                 <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
                     Order Now</h2>
                 <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">
-                    Place an order by filling the fields below and clicking send. We will bring the item to you and take payment. Make sure to include your desk location</h3>
+                    Place an order by filling the fields below and clicking Order. We will bring the item to you and take payment. Make sure to include your desk location</h3>
             </div>
         </div>
     </div>
   <div class="container-fluid">
         <div class="row justify-content-center">
     <div class="container">
-  <form action="/action_page.php">
+  <form id="contactform" method="POST" style="">
     <div class="row">
       <div class="col-25">
         <label for="fname">First Name</label>
@@ -94,21 +94,32 @@
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="subject">Subject</label>
+        <label for="Ketchup">Ketchup</label>
       </div>
       <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <select id="Ketchup" name="Ketchup">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
       </div>
     </div>
     <div class="row">
-      <input type="submit" value="Submit">
+      <div class="col-25">
+        <label for="Desk Location">Desk Location</label>
+      </div>
+      <div class="col-75">
+        <textarea id="DeskLocation" name="DeskLocation" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Order">
     </div>
   </form>
 </div>
     </div>
   </div>
 </section>
-  <form id="contactform" method="POST" style="">
+  <!-- <form id="contactform" method="POST" style="">
     <input type="text" name="Name" placeholder="Your Name">
     <input type="hidden" name="_subject" value="New Bap Order" />
     <input type="radio" name="Bap" value="Bacon" checked> Bacon<br>
@@ -124,7 +135,7 @@
     var contactform =  document.getElementById('contactform');
     contactform.setAttribute('action', '//formspree.io/' + 'softwaresupport' + '@' + 'live' + '.' + 'co' + '.' + 'uk');
 </script>
-
+-->
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
