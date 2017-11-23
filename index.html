@@ -65,13 +65,13 @@
 <form id="contactform" method="POST" style="">
     <input type="text" name="Name" placeholder="Your Name">
     <input type="hidden" name="_subject" value="New Bap Order" />
-    <textarea name="Bap" placeholder="Bacon/Sausage/Sausage+Bacon"></textarea>
-    <input type="text" name="Sauce" placeholder="Ketchup/None">
+    <input type="radio" name="Bap" value="Bacon" checked> Bacon<br>
+    <input type="radio" name="Bap" value="Sausage"> Sausage<br>
+    <input type="radio" name="Bap" value="Bacon+Sausage"> Bacon+Sausage
+    <input type="text" name="Ketchup" placeholder="Yes/No">
     <textarea name="Desk Location" placeholder="Desk Location"></textarea>
     <input type="text" name="_gotcha" style="display:none" />
-  <input type="radio" name="gender" value="male" checked> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
-  <input type="radio" name="gender" value="other"> Other
+    
     <input type="submit" value="Send">
 </form>
 <script>
