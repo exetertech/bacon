@@ -72,7 +72,7 @@
     <div class="row">
       <div class="col form-group">
         <label for="fname">Your full Name: </label>
-        <input type="text" id="fname" class="form-control" name="First Name: " placeholder="Your full Name.">
+        <input type="text" id="fname" class="form-control" name="Full Name: " placeholder="Full Name">
       </div>
     </div>
   <!--  <div class="row">
@@ -169,16 +169,22 @@ transform:scale(1.05);
       </div>
       </div>
     <div class="row justify-content-center">
-      <input type="submit" value="Order">
+      <input class="submit" style="transform: Scale(2); border-radius: 5px; margin-top: 10px;" type="submit" value="Order">
     </div>
   </form>
+  <div class="row"><p>Credit to Dan Hnnssy and Jack Gooding &copy; &reg; &trade;</p></div>
       <script>
     var contactform = document.getElementById('contactform');
-    contactform.setAttribute('action', 'https://formspree.io/softwaresupport@live.co.uk');
+    contactform.setAttribute('action', 'https://formspree.io/frazer.hutchinson@sitel.com');
 </script>
 </div>
     </div>
   </div>
+  <style>
+  .submit:hover {
+    transform:scale(2.1);
+  }
+  </style>
 </section>
   <!-- <form id="contactform" method="POST" style="">
     <input type="text" name="Name" placeholder="Your Name">
