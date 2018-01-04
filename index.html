@@ -140,30 +140,20 @@
 }
 </style>
     </div>
-<!--    <div class="row">
-      <div class="col">
-        <label for="Ketchup">Ketchup: </label>
-        <select id="Ketchup" name="Ketchup">
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
-      </div>
-    </div>
-  -->
     <div class="row">
-      <div class="">
-        <label for="Desk Location">Desk Location: </label>
-      </div>
-      <div class="">
-        <input type="text" id="DeskLocation" name="DeskLocation" placeholder="...">
-      </div>
-      <div class="">
-        <label for="Message">Additional Info:</label>
-      </div>
-      <div class="">
-        <textarea id="Message" name="Message" placeholder="..." style="height:150px"></textarea>
+      <div class="col form-group">
+        <label for="fname">Desk Location: </label>
+        <input type="text" id="DeskLocation" class="form-control" name="DeskLocation" placeholder="Desk Location">
       </div>
     </div>
+      <div class="row">
+      <div class="col">
+      <div class="form-group">
+        <label for="Message">Additonal Info:</label>
+        <textarea id="Message" name="additonalInfo" class="form-control" rows="5" placeholder="..."></textarea>
+        </div>
+      </div>
+      </div>
     <div class="row justify-content-center">
       <input type="submit" value="Order">
     </div>
