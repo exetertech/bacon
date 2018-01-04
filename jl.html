@@ -15,31 +15,31 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
+
+
+
 </head>
 <body>
 <section class="header4 cid-qBwVr7QNu4 mbr-fullscreen" id="header4-i" data-rv-view="27">
 
-    
 
-    
+
+
 
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="media-content col-md-10">
                 <h1 class="mbr-section-title align-center mbr-white pb-3 mbr-bold mbr-fonts-style display-1">
                     Bacon Fryday<br></h1>
-              
+
               <div class="mbr-text align-center mbr-white pb-3">
                 <h2>John Lewis</h2>
-                
+
   </div>
-                
+
                 <div class="mbr-text align-center mbr-white pb-3">
                     <p class="mbr-text mbr-fonts-style display-5">
-                        <br><strong>Baps delivered straight to your desk</strong><br><strong>Available 6.45am - 11am</strong><br><br>Bacon Bap - £1.00<br>Sausage Bap - £1.00<br>Bacon and Sausage Bap - £1.50</p>
+                        <br><strong>Baps delivered straight to your desk</strong><br><strong>Available 8am - 11am</strong><br><br>Bacon Bap - £1.00<br>Sausage Bap - £1.00<br>Bacon and Sausage Bap - £1.50</p>
                 </div>
                 <div class="mbr-section-btn align-center"><a class="btn btn-md btn-primary display-4" href="index.html#form1-l">Order</a></div>
             </div>
@@ -52,9 +52,9 @@
 
 <section class="engine"><a href="https://mobirise.co/h">make a website for free</a></section><section class="mbr-section form1 cid-qBx6900OkZ" id="form1-l" data-rv-view="30">
 
-    
 
-    
+
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
@@ -70,65 +70,107 @@
     <div class="container">
   <form id="contactform" method="POST" style="">
     <div class="row">
-      <div class="col-25">
-        <label for="fname">First Name - - </label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+      <div class="col form-group">
+        <label for="fname">Your full Name: </label>
+        <input type="text" id="fname" class="form-control" name="firstname" placeholder="Your full Name.">
       </div>
     </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="lname">Last Name - - </label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="Bap">Bap - - </label>
-      </div>
-      <div class="col-75">
+  <!--  <div class="row">
+      <div class="col">
+        <label for="Bap">Bap: </label>
         <select id="Bap" name="Bap">
           <option value="Bacon">Bacon</option>
           <option value="Sausage">Sausage</option>
           <option value="Bacon+Sausage">Bacon+Sausage</option>
         </select>
       </div>
+    </div>-->
+<div class="form-group">
+  <label for="bap">Bap Type:</label>
+    <div class="row bap">
+      <label class="labl col">
+    <input type="radio" name="bapType" value="Sausage" checked="checked"/>
+    <div>Sausage</div>
+</label>
+<label class="labl col">
+    <input type="radio" name="bapType" value="Bacon" />
+    <div>Bacon</div>
+</label>
+<label class="labl col">
+    <input type="radio" name="bapType" value="Bacon&Sausage" />
+    <div>Bacon & Sausage</div>
+</label>
+</div>
+</div>
+
+<div class="form-group">
+<label for="ketchup">Ketchup:</label>
+<div class="row ketchup">
+  <label class="labl col">
+<input type="radio" name="ketchup" value="No" checked="checked"/>
+<div>No</div>
+</label>
+<label class="labl col">
+<input type="radio" name="ketchup" value="Yes" />
+<div>Yes</div>
+</label>
+</div>
+<!--wat-->
+
+<style>
+.labl {
+    display : block;
+    width: 400px;
+    text-align: center;
+
+}
+.labl > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+.labl > input + div{ /* DIV STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+    border-radius: 15px;
+    height: 50px;
+}
+.labl > input:checked + div{ /* (RADIO CHECKED) DIV STYLES */
+    background-color: #ffd6bb;
+    border: 1px solid #ff6600;
+}
+</style>
     </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="Ketchup">Ketchup - - </label>
-      </div>
-      <div class="col-75">
+<!--    <div class="row">
+      <div class="col">
+        <label for="Ketchup">Ketchup: </label>
         <select id="Ketchup" name="Ketchup">
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
       </div>
     </div>
+  -->
     <div class="row">
-      <div class="col-25">
-        <label for="Desk Location">Desk Location - - </label>
+      <div class="">
+        <label for="Desk Location">Desk Location: </label>
       </div>
-      <div class="col-75">
-        <textarea id="DeskLocation" name="DeskLocation" placeholder="..." style="height:150px"></textarea>
+      <div class="">
+        <input type="text" id="DeskLocation" name="DeskLocation" placeholder="...">
       </div>
-      <div class="col-25">
-        <label for="Message">Message - - </label>
+      <div class="">
+        <label for="Message">Additional Info:</label>
       </div>
-      <div class="col-75">
+      <div class="">
         <textarea id="Message" name="Message" placeholder="..." style="height:150px"></textarea>
       </div>
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
       <input type="submit" value="Order">
     </div>
   </form>
       <script>
-    var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', '//formspree.io/' + 'frazer' + '.' + 'hutchinson' + '@' + 'sitel' + '.' + 'com');
+    var contactform = document.getElementById('contactform');
+    contactform.setAttribute('action', 'https://formspree.io/softwaresupport@live.co.uk');
 </script>
 </div>
     </div>
@@ -143,7 +185,7 @@
     <input type="text" name="Ketchup" placeholder="Yes/No">
     <textarea name="Desk Location" placeholder="Desk Location"></textarea>
     <input type="text" name="_gotcha" style="display:none" />
-    
+
     <input type="submit" value="Send">
 </form>
 <script>
@@ -159,7 +201,7 @@
   <script src="assets/smooth-scroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
-  
-  
+
+
 </body>
 </html>
